@@ -1,0 +1,58 @@
+@if(showlogin) {
+<div class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="login-container mt-5 ">
+                <h2>User Login Page</h2>
+                <h3 class="cole">{{authError}}</h3>
+                <form #userlogin="ngForm" (ngSubmit)="userlogins(userlogin.value)">
+                    <input class="inpu text-success" type="email" #email="ngModel" ngModel name="email" placeholder="Email"
+                        required>
+                    <span *ngIf="email.invalid && email.touched" class="text-danger ps-2">Please Enter Email</span>
+
+                    <input class="inpu text-success" type="password" #password="ngModel" ngModel name="password"
+                        placeholder="Password" required="">
+                    <span *ngIf="password.invalid && password.touched" class="text-danger ps-2">Please Enter
+                        Password</span>
+
+                    <button [disabled]="userlogin.invalid" id="top" type="submit">Login</button>
+                </form>
+                <div class="text-center"><a class="a" (click)="openlogin()">Dont Have An Account?</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+}@else{
+<div class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="login-container mt-5 ">
+                <h2>User Register Page</h2>
+                <h3 class="coles">{{authError}}</h3>
+                <form #userSingUp="ngForm" (ngSubmit)="usersingup(userSingUp.value)">
+                    <input class="inpu text-success" type="text" #name="ngModel" ngModel name="name" placeholder="Name"
+                        required>
+                    <span *ngIf="name.invalid && name.touched" class="text-danger ps-2">Please Enter Your Name</span>
+
+                    <input class="inpu text-success " #email="ngModel" type="email" ngModel name="email"
+                        placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$">
+                    <span *ngIf="email.touched  && email.errors?.['required']" class="text-danger ps-2">
+                        Please Enter Your Email
+                    </span>
+                    <span *ngIf=" email.touched  && email.errors?.['pattern']" class="text-danger ps-2">Please Enter A
+                        Valid Email Address</span>
+                    <input class="inpu text-success" type="password" #password="ngModel" ngModel name="password"
+                        placeholder="Password" required>
+                    <span *ngIf="password.invalid && password.touched" class="text-danger ps-2">Please Enter Your
+                        Password</span>
+
+
+                    <button [disabled]="userSingUp.invalid" type="submit">Login</button>
+                </form>
+                <div class="text-center">
+                    <a class="a" (click)="openlogin()">Dont Have An Account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>}

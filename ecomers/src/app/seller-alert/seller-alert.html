@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="login-container mt-5 ">
+                <h3 class="coles">ADD PRODUCT</h3>
+                <h5 class="coles">{{addproductmassage}}</h5>
+                <form #addproduct="ngForm" (ngSubmit)="submit(addproduct.value)">
+                    <input (click)="clic()" type="text" ngModel name="name" placeholder="Add Product Name" >
+                    <input (click)="clic()" type="text" ngModel name="price" placeholder="Add product price ">
+                      <input (click)="clic()" type="text" ngModel name="image" placeholder="Add image Url" >
+                    <input (click)="clic()" type="textarea" ngModel name="Description" placeholder="Description">
+                    <button  >ADD PRODUCT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="container mt-5">
+  <h2 style="text-align: center; color: rgb(59, 116, 3);">Your Cart</h2>
+
+  @if (cartItems.length > 0) {
+
+    <table class="table table-bordered mt-3">
+      <thead class="table-success">
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        @for (item of cartItems; track item.id) {
+          <tr>
+            <td><img [src]="item.image" width="80"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+
+            <!-- Quantity -->
+            <td>
+              <button  class="btn  btn-sm btn-danger "
+                (click)="decrease(item.id)">-</button>
+
+              {{item.quantity}}
+
+              <button class="btn btn-sm btn-success"
+                (click)="increase(item.id)">+</button>
+            </td>
+
+            <!-- Total -->
+            <td>{{item.price * item.quantity}}</td>
+
+            <!-- Delete -->
+            <td>
+              <button class="btn btn-danger"
+                (click)="delete(item.id)">
+                Delete
+              </button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+
+   
+    <div class="mt-4 p-3 border">
+      <h4>Total Items: {{totalQty}}</h4>
+      <h4>Total Price: ₹{{totalPrice}}</h4>
+
+      <button class="btn btn-success mt-3"
+        (click)="orderNow()">
+        Order Now
+      </button>
+    </div>
+
+  } @else {
+    <h4>Cart is Empty</h4>
+  }
+
+</div>

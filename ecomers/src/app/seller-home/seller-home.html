@@ -1,0 +1,32 @@
+<div style="color: darkgreen;" class="text-center">
+    <h3>{{deleteproduct}}</h3>
+</div>
+
+<div class="body">
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+          <th>Action</th>
+         
+        </tr>
+
+        @for(item of productlist; track item){
+        <tr>
+            <td><img src="{{item.image}}" alt="" srcset=""></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+
+            <td>{{item.Description}}</td>
+            <td>
+                <button class="form-control mb-1"><a  routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="faedit"></fa-icon></a></button>
+                <button class="form-control" (click)="delete(item.id)"> <fa-icon [icon]="icon"></fa-icon></button>
+     
+            </td>
+        </tr>
+        }
+    </table>
+
+</div>

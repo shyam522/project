@@ -1,0 +1,22 @@
+a{
+    font-size: 25px;
+    text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    padding-right: 20px;
+
+}
+ul{
+    margin-right: 100px;
+}
+a:hover{
+    font-size: 26px;
+    text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(244, 168, 53);
+   text-decoration: underline ;
+}
+nav{
+    background-color: rgb(247, 246, 244);
+}
