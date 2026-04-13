@@ -40,5 +40,8 @@ export class Seller implements OnInit {
       }
     })
   }
+  inputetxt(){
+        this.authError=" "
+  }
   
 }

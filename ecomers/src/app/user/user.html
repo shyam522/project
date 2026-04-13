@@ -6,11 +6,11 @@
                 <h2>User Login Page</h2>
                 <h3 class="cole">{{authError}}</h3>
                 <form #userlogin="ngForm" (ngSubmit)="userlogins(userlogin.value)">
-                    <input class="inpu text-success" type="email" #email="ngModel" ngModel name="email" placeholder="Email"
+                    <input class="inpu text-success" type="email" #email="ngModel" ngModel name="email" (click)="inputetxtw()" placeholder="Email"
                         required>
                     <span *ngIf="email.invalid && email.touched" class="text-danger ps-2">Please Enter Email</span>
 
-                    <input class="inpu text-success" type="password" #password="ngModel" ngModel name="password"
+                    <input class="inpu text-success" type="password" #password="ngModel" (click)="inputetxtw()" ngModel name="password"
                         placeholder="Password" required="">
                     <span *ngIf="password.invalid && password.touched" class="text-danger ps-2">Please Enter
                         Password</span>

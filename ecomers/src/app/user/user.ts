@@ -50,7 +50,10 @@ this.users.reloadSeller()
 
 
 
-
+ inputetxtw(){
+        this.authError=" "
+  }
+  
 
 
 
@@ -58,5 +61,6 @@ this.users.reloadSeller()
 
   openlogin() {
     this.showlogin = !this.showlogin
+       this.authError=""
   }
 }
