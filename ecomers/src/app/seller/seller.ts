@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Seller implements OnInit {
   showlogin = true;
+   sellerNamelogin: string = '';
   authError:string= ''; 
   constructor(private seller: Sellered, private router:Router) {}
   ngOnInit(): void{
@@ -28,20 +29,25 @@ export class Seller implements OnInit {
       this.authError=" "
   }
   singup(data:singup): void {
-      this.seller.userSignUp(data);
+      this.seller.sellerSignUp(data);
      this.authError="Success"
   }
   login(data:login): void { 
-  this.seller.userlogin(data)
+
+  this.seller.sellerlogin(data)
     this.seller.isloginError.subscribe((isError)=>{
       if(isError){
         this.authError="Login Failed "
 
       }
     })
+    
   }
   inputetxt(){
         this.authError=" "
   }
+
+
+
   
 }

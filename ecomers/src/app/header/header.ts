@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { product } from '../data-type';
 import { Products } from '../services/products';
 
-import {  Count } from '../count';
+import { Count } from '../count';
+import { Sellered } from '../services/sellered';
 
 
 
@@ -17,12 +18,13 @@ import {  Count } from '../count';
 export class Header implements OnInit {
   sellerName: string = '';
   menutype: string = 'default'
+  sellerservice=inject(Sellered)
   productservice = inject(Products)
   route = inject(Router)
-userName: string = '';
-    cartCount: number = 0;
+  userName: string = '';
+  cartCount: number = 0;
   searchresult: undefined | product[]
-  cartService=inject(Count)
+  cartService = inject(Count)
 
   ngOnInit(): void {
     this.cartService.getCount().subscribe(count => {
@@ -34,18 +36,17 @@ userName: string = '';
           this.menutype = 'seller';
           if (localStorage.getItem('seller')) {
             let sellerStore = localStorage.getItem('seller');
-            let sellerData = sellerStore && JSON.parse(sellerStore);
+            let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name
           }
-        } else if(localStorage.getItem('user')){
-let userstore= localStorage.getItem('user')
-let userdata=userstore && JSON.parse(userstore);
-            this.userName = userdata.name
-this.menutype='user'
+        } else if (localStorage.getItem('user')) {
+          let userstore = localStorage.getItem('user')
+          let userdata = userstore && JSON.parse(userstore);
+          this.userName = userdata.name
+          this.menutype = 'user'
 
 
-        } else
-          {
+        } else {
 
           this.menutype = 'default'
         }
@@ -54,12 +55,12 @@ this.menutype='user'
   }
   logout() {
     localStorage.removeItem('seller')
-    this.cartCount=0
+    this.cartCount = 0
     this.route.navigate(['/'])
   }
-userlogout() {
-localStorage.removeItem('user')
-    this.cartCount=0
+  userlogout() {
+    localStorage.removeItem('user')
+    this.cartCount = 0
     this.route.navigate(['/'])
   }
 
@@ -68,7 +69,7 @@ localStorage.removeItem('user')
       const element = query.target as HTMLInputElement
       this.productservice.searchproduct(element.value).subscribe((result) => {
         console.warn(result)
-       
+
       })
     }
   }

@@ -17,7 +17,7 @@ export class Sellered {
 constructor(private http:HttpClient , private router:Router){
 
 }
-userSignUp(data:singup){
+sellerSignUp(data:singup){
    
  this.http.post("http://localhost:3000/seller",data,{observe:'response'}).subscribe((result)=>{
    this.isSellerLoggedIn.next(true);
@@ -35,7 +35,7 @@ reloadSeller(){
   }
 }
 
-userlogin(data:login){
+sellerlogin(data:login){
  this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
  {observe:'response'} 
 ).subscribe((result:any)=>{
