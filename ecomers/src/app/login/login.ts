@@ -32,7 +32,7 @@ export class Login implements OnInit{
   }
   
 addItem(item: product) {
-alert("item has been selected")
+
   this.cartService.addToCart(item);
 }
  

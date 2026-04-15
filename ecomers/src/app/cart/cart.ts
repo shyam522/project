@@ -66,11 +66,12 @@ this.route.navigate(["user"])
 
   this.productService.placeOrder(orderData).subscribe((res) => {
     alert("Order Placed Successfully ✅");
-
+this.route.navigate(["/"])
     // cart empty kar do after order
     this.cartItems = [];
     this.totalPrice = 0;
     this.totalQty = 0;
+    this.cartService.clearCart()
   });
 }
 
