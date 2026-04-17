@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { product } from '../data-type';
 import { ActivatedRoute } from '@angular/router';
@@ -16,6 +16,7 @@ export class SellerUpdateProduct implements OnInit {
   productmassage: undefined | string;
   productservice = inject(Products)
   productdata: undefined | product
+  cd = inject(ChangeDetectorRef);
   routerss = inject(Router)
   ngOnInit(): void {
     let productid = this.rou.snapshot.paramMap.get('id')
@@ -23,7 +24,7 @@ export class SellerUpdateProduct implements OnInit {
     productid && this.productservice.getproduct(productid).subscribe((data) => {
 
       this.productdata = data
-
+ this.cd.detectChanges();
     })
   }
   submit(data: product) {

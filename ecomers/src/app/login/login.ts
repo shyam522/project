@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit, } from '@angular/core';
 import { Products } from '../services/products';
 import { product } from '../data-type';
 import { CommonModule } from '@angular/common';
@@ -16,7 +16,7 @@ export class Login implements OnInit{
   show=inject(Products)
   route=inject(Router)
  showproduct:undefined|product[]
-
+cd = inject(ChangeDetectorRef);
 
 
  cartService=inject(Count)
@@ -27,7 +27,7 @@ export class Login implements OnInit{
      
   this.showproduct=data
 
-
+ this.cd.detectChanges();
     })
   }
   

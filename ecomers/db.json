@@ -192,14 +192,7 @@
   ],
   "products": [
     {
-      "name": "Bag ",
-      "price": "5000",
-      "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "Description": "i love it",
-      "id": "1"
-    },
-    {
-      "name": "sunglass",
+      "name": "sunglassadad",
       "price": "300",
       "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
       "Description": "i love it",
@@ -225,6 +218,20 @@
       "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
       "Description": "asas",
       "id": "5"
+    },
+    {
+      "name": "Makeup kit",
+      "price": 1200,
+      "image": "C:\\fakepath\\download.jpg",
+      "Description": "i love it",
+      "id": "UQKxPTy"
+    },
+    {
+      "name": "",
+      "price": 0,
+      "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
+      "Description": "",
+      "id": "ojYNXsv"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

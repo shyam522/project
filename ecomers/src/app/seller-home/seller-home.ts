@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { Products } from '../services/products';
 import { product } from '../data-type';
 import { CommonModule } from '@angular/common';
@@ -19,6 +19,7 @@ export class SellerHome implements OnInit {
   deleteproduct: undefined | string
   icon = faTrash;
   faedit = faEdit;
+  cd = inject(ChangeDetectorRef);
   delete(id: number) {
     console.warn("text id", id)
     this.product.deletes(id).subscribe((result) => {
@@ -43,7 +44,7 @@ export class SellerHome implements OnInit {
     this.product.productlist().subscribe((result) => {
       this.productlist = result
       console.warn(result)
-
+ this.cd.detectChanges();
 
     })
 
