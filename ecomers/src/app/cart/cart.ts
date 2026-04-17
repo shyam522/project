@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { Products } from '../services/products';
 import { Router } from '@angular/router';
 import { UserAuth } from '../services/user-auth';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './cart.html',
   styleUrls: ['./cart.css'],
 })
@@ -21,6 +22,9 @@ productService = inject(Products);
 userservice =inject(UserAuth)
   totalPrice: number = 0;
   totalQty: number = 0;
+  diplay=true
+address: undefined| any
+
 
   ngOnInit(): void {
     this.cartService.getItems().subscribe((data) => {
@@ -75,8 +79,21 @@ this.route.navigate(["/"])
   });
 }
 
-
+}
+show(){
+  this.diplay=!this.diplay
+}
+Address(data:any){
+this.cartService.address(data).subscribe((res)=>{
+  console.log("order placed")
+})
 }
 
 
+showAddres(data:any){
+this.cartService.showaddress(data).subscribe((res)=>{
+this.address = res
+})
+
+}
 }

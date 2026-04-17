@@ -72,4 +72,14 @@ clearCart() {
     return this.cartCount$;
   }
 
+address(data:any){
+  return this.http.post("http://localhost:3000/address",data)
+
+}
+showaddress(data:any){
+  return this.http.get<any[]>("http://localhost:3000/address",data)
+
+}
+
+
 }

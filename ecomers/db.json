@@ -3,193 +3,62 @@
     {
       "name": "shyam",
       "email": "Shyampratap465@gmail.com",
-      "password": "shyam",
-      "id": "1"
-    },
-    {
-      "name": "frfrf",
-      "email": "czd@dd.com",
       "password": "ss",
-      "id": "6Fv1_a6frfw"
+      "id": 1
     }
   ],
   "user": [
     {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "asa",
-      "id": "wZS__yMUHnQ"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "dd",
-      "id": "ASW4-xDUjGo"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "q",
-      "id": "9qb0YUiGjww"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "s",
-      "id": "Mnax9sljKMs"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "ss",
-      "id": "njfQCDL_k2o"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "ss",
-      "id": "J_EuJjlCpFk"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "s",
-      "id": "89wpHvtFwsQ"
-    },
-    {
-      "name": "shyam",
-      "email": "czd@dd.com",
-      "password": "ss",
-      "id": "EQD005UpdTg"
-    },
-    {
-      "name": "manoj",
-      "email": "czd@dd.com",
-      "password": "ss",
-      "id": "eHJbVnz8M7o"
+      "name": "watch",
+      "email": "Shyampratap465@gmail.com",
+      "password": "aa",
+      "id": 1
     },
     {
       "name": "shyam",
       "email": "Shyampratap465@gmail.com",
-      "password": "aaaa",
-      "id": "jL4NTg8"
+      "password": "ss",
+      "id": 2
+    },
+    {
+      "name": "shyam",
+      "email": "Shyampratap465@gmail.com",
+      "password": "ff",
+      "id": 3
+    },
+    {
+      "name": "shyam",
+      "email": "czd@dd.com",
+      "password": "ss",
+      "id": 4
+    },
+    {
+      "name": "watch",
+      "email": "czd@dd.com",
+      "password": "sssss",
+      "id": 5
+    },
+    {
+      "name": "shyam",
+      "email": "Shyampratap465@gmail.com",
+      "password": "ssssss",
+      "id": 6
+    },
+    {
+      "name": "shyam",
+      "email": "Shyampratap465@gmail.com",
+      "password": "ssss",
+      "id": 7
+    },
+    {
+      "name": "shyam",
+      "email": "Shyampratap465@gmail.com",
+      "password": "ss",
+      "id": 8
     }
   ],
-  "orders": [
-    {
-      "items": [
-        {
-          "name": "shyam",
-          "price": 987,
-          "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
-          "Description": "i love it",
-          "sellerId": "DOAQo3G",
-          "id": 21,
-          "quantity": 5
-        },
-        {
-          "name": "shyam",
-          "price": 50,
-          "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
-          "Description": "asas",
-          "id": 6,
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 4985,
-      "totalQty": 6,
-      "date": "2026-04-10T13:11:38.956Z",
-      "id": "1"
-    },
-    {
-      "items": [
-        {
-          "name": "bottel",
-          "price": "300",
-          "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-          "Description": "i love it",
-          "id": "3",
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 300,
-      "totalQty": 1,
-      "date": "2026-04-11T09:45:21.965Z",
-      "id": "Gamds8lHIrk"
-    },
-    {
-      "items": [
-        {
-          "name": "bottel",
-          "price": "300",
-          "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-          "Description": "i love it",
-          "id": "3",
-          "quantity": 15
-        }
-      ],
-      "totalPrice": 4500,
-      "totalQty": 15,
-      "date": "2026-04-11T09:46:00.990Z",
-      "id": "eK-HohSF3T0"
-    },
-    {
-      "items": [
-        {
-          "name": "Bag ",
-          "price": "5000",
-          "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-          "Description": "i love it",
-          "id": "1",
-          "quantity": 1
-        },
-        {
-          "name": "sunglass",
-          "price": "300",
-          "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-          "Description": "i love it",
-          "id": "2",
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 5300,
-      "totalQty": 2,
-      "date": "2026-04-15T07:21:17.557Z",
-      "id": "JuBtozY"
-    },
-    {
-      "items": [
-        {
-          "name": "Bag ",
-          "price": "5000",
-          "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-          "Description": "i love it",
-          "id": "1",
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 5000,
-      "totalQty": 1,
-      "date": "2026-04-15T07:22:32.012Z",
-      "id": "m-740v9"
-    },
-    {
-      "items": [
-        {
-          "name": "Bag ",
-          "price": "5000",
-          "image": "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-          "Description": "i love it",
-          "id": "1",
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 5000,
-      "totalQty": 1,
-      "date": "2026-04-15T11:28:09.587Z",
-      "id": "LxPWcQt"
-    }
-  ],
+  "orders": [],
+  "address": [],
   "products": [
     {
       "name": "sunglassadad",
@@ -218,13 +87,6 @@
       "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
       "Description": "asas",
       "id": "5"
-    },
-    {
-      "name": "Makeup kit",
-      "price": 1200,
-      "image": "C:\\fakepath\\download.jpg",
-      "Description": "i love it",
-      "id": "UQKxPTy"
     },
     {
       "name": "",

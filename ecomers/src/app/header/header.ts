@@ -6,6 +6,7 @@ import { Products } from '../services/products';
 
 import { Count } from '../count';
 import { Sellered } from '../services/sellered';
+import { json } from 'stream/consumers';
 
 
 
@@ -18,7 +19,7 @@ import { Sellered } from '../services/sellered';
 export class Header implements OnInit {
   sellerName: string = '';
   menutype: string = 'default'
-  sellerservice=inject(Sellered)
+  sellerservice = inject(Sellered)
   productservice = inject(Products)
   route = inject(Router)
   userName: string = '';
@@ -41,11 +42,15 @@ export class Header implements OnInit {
           }
         } else if (localStorage.getItem('user')) {
           let userstore = localStorage.getItem('user')
-          let userdata = userstore && JSON.parse(userstore)[0];
+          if(userstore){
+           
+            let parsedData = JSON.parse(userstore)
+            
+          let userdata = Array.isArray(parsedData)? parsedData[0] : parsedData;
           this.userName = userdata.name
           this.menutype = 'user'
 
-
+}
         } else {
 
           this.menutype = 'default'
@@ -57,11 +62,13 @@ export class Header implements OnInit {
     localStorage.removeItem('seller')
     this.cartCount = 0
     this.route.navigate(['/'])
+    this.cartService.clearCart()
   }
   userlogout() {
     localStorage.removeItem('user')
     this.cartCount = 0
     this.route.navigate(['/'])
+    this.cartService.clearCart()
   }
 
   searchproduct(query: KeyboardEvent) {
