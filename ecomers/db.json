@@ -57,8 +57,69 @@
       "id": 8
     }
   ],
-  "orders": [],
-  "address": [],
+  "orders": [
+    {
+      "items": [
+        {
+          "name": "shyam",
+          "price": "50",
+          "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
+          "Description": "asas",
+          "id": "5",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 50,
+      "totalQty": 1,
+      "date": "2026-04-20T09:56:54.231Z",
+      "id": 1
+    },
+    {
+      "items": [
+        {
+          "name": "shyam",
+          "price": "50",
+          "image": "https://th.bing.com/th/id/OIP.xdtL4HlbjIZfaAmnhdmdcAHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3",
+          "Description": "asas",
+          "id": "5",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 50,
+      "totalQty": 1,
+      "date": "2026-04-20T10:07:57.671Z",
+      "id": 2
+    }
+  ],
+  "address": [
+    {
+      "name": "",
+      "Mobileno": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "pin": "",
+      "id": 1
+    },
+    {
+      "name": "",
+      "Mobileno": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "pin": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "Mobileno": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "pin": "",
+      "id": 3
+    }
+  ],
   "products": [
     {
       "name": "sunglassadad",
